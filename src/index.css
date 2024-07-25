@@ -1,0 +1,41 @@
+.btn {
+  /* Disable hover effects */
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: inherit !important;
+    border-color: inherit !important;
+    color: inherit !important;
+  }
+
+  /* Disable active effects */
+  &:active {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+}
+
+.html {
+  background-color: #e44d26;
+  color: white;
+}
+
+.css {
+  background-color: #1572b6;
+  color: white;
+}
+
+.ts {
+  background-color: #007acc;
+  color: white;
+}
+
+.react {
+  background-color: #61dafb;
+  color: black;
+}
+
+.js {
+  background-color: #f7df1e;
+  color: black;
+}
