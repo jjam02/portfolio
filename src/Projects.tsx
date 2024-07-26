@@ -38,8 +38,8 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="container mt-5">
-            <h1 className="m-5 text-center" >Projects</h1>
+        <div className="container mt-5 mb-0">
+            <h1 className="m-5  text-center" >Projects</h1>
             {data.map((project, index) => (
                 <ProjectCard key={project.id} {...project} isEven={index % 2 === 0} />
             ))}

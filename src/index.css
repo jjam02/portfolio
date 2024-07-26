@@ -1,18 +1,11 @@
-.btn {
-  /* Disable hover effects */
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: inherit !important;
-    border-color: inherit !important;
-    color: inherit !important;
-  }
-
-  /* Disable active effects */
-  &:active {
-    box-shadow: none !important;
-    transform: none !important;
-  }
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: inherit !important;
+  border-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .html {
@@ -38,4 +31,11 @@
 .js {
   background-color: #f7df1e;
   color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .body {
+    background-color: #333;
+    color: white;
+  }
 }
