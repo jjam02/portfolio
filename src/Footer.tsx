@@ -13,7 +13,7 @@ const Footer = () => {
                 </a>
                 {/* Add more icons as needed */}
             </div>
-            <p>&copy; 2024 Jonathan Alvarez</p>
+            <p>&copy; {new Date().getFullYear()} Jonathan Alvarez</p>
         </footer>
     );
 };
