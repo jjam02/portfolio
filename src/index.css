@@ -33,6 +33,32 @@
   color: black;
 }
 
+.footer {
+  padding: 20px;
+
+  text-align: center; /* Center the content */
+}
+
+.social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons a {
+  margin: 0 8px; /* Adjust space between icons */
+}
+
+.social-icon {
+  width: 60px; /* Smaller size for icons */
+  height: 60px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
 @media (prefers-color-scheme: dark) {
   .body {
     background-color: #333;

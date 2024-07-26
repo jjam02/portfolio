@@ -1,0 +1,6 @@
+.self-img {
+  max-width: 150px; /* Set the maximum width */
+  max-height: 150px; /* Set the maximum height */
+  width: auto; /* Ensure width adjusts to maintain aspect ratio */
+  height: auto; /* Ensure height adjusts to maintain aspect ratio */
+}
