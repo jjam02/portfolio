@@ -56,7 +56,7 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Slightly enlarge icon on hover */
+  transform: scale(1.3); /* Slightly enlarge icon on hover */
 }
 
 @media (prefers-color-scheme: dark) {

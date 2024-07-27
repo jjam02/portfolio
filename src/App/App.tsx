@@ -3,11 +3,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Navbar from './Navbar'
-import Home from './Home';
-import Projects from './Projects';
-import About from './About';
-import Footer from './Footer';
+import Navbar from './tsx/Navbar'
+import Home from './tsx/Home';
+import Projects from './tsx/Projects';
+import About from './tsx/About';
+import Footer from './tsx/Footer';
 
 
 const App = () => {

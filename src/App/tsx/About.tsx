@@ -1,11 +1,11 @@
-import "./About.css";
-import P5Wrapper from "./P5Wrapper";
+import "../css/About.css";
+import P5Wrapper from "../../P5Wrapper";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const About = () => {
     return (<div  >
-        <h1 className="text-center display-1">ABOUT ME </h1>
+        <h1 className="text-center display-3">About Me </h1>
         <div className="container d-flex flex-column justify-content-center align-items-center mt-5">
             <img
                 src="https://placehold.co/300x300"
