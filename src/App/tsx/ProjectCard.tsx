@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUr
                 <>
                     <div className="col-12 col-md-6 order-1 order-md-1">
                         <h3>{title}</h3>
-                        {imgUrl && <img src={imgUrl} alt={title} />}
+                        {imgUrl && <img className="img-fluid" src={imgUrl} alt={title} />}
                     </div>
                     <div className="col-12 col-md-6 order-2 order-md-2">
                         <TechList tech={tech} />
