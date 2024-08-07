@@ -6,10 +6,10 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="social-icons d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/jonathan-alvarez-a99b8a1aa/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedIn} alt="LinkedIn" className="social-icon" />
                 </a>
-                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/jjam02" target="_blank" rel="noopener noreferrer">
                     <img src={github} alt="GitHub" className="social-icon" />
                 </a>
                 {/* Add more icons as needed */}

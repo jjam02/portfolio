@@ -9,6 +9,7 @@ interface ProjectCardProps {
     description: string;
     imgUrl: string;
     link: string;
+    repo: string;
     tech: string[];
 }
 
@@ -23,7 +24,8 @@ const TechList: React.FC<TechListProps> = ({ tech }) => {
             {tech.map((technology, index) => (
                 <button
                     key={index}
-                    className={`btn ${technology.toLowerCase()} m-1`}
+                    className={`btn ${technology.toLowerCase().replace('#', 'Sharp')} m-1`}
+                    disabled={true}
                 >
                     {technology}
                 </button>
@@ -33,11 +35,11 @@ const TechList: React.FC<TechListProps> = ({ tech }) => {
 }
 
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUrl, link, isEven, tech }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUrl, link, isEven, tech, repo }) => {
     const alignSide: string = isEven ? "left" : "right";
 
     return (
-        <div key={id} className="row m-5">
+        <div key={id} className="row  m-5 mx-auto">
             {alignSide === "left" ? (
                 <>
                     <div className="col-12 col-md-6 order-1 order-md-1">
@@ -47,19 +49,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUr
                     <div className="col-12 col-md-6 order-2 order-md-2">
                         <TechList tech={tech} />
                         <p>{description}</p>
-                        {link && <a href={link}>More Info</a>}
+                        <div>
+                            {link && <a className="m-3" href={link}><button className="btn btn-primary">Live Link</button></a>}
+                            {repo && <a href={repo}><button className="btn btn-primary">Repo</button></a>}
+                        </div>
+
                     </div>
                 </>
             ) : (
                 <>
                     <div className="col-12 col-md-6 order-1 order-md-2">
                         <h3>{title}</h3>
-                        {imgUrl && <img src={imgUrl} alt={title} />}
+                        {imgUrl && <img className="img-fluid" src={imgUrl} alt={title} />}
                     </div>
                     <div className="col-12 col-md-6 order-2 order-md-1">
                         <TechList tech={tech} />
                         <p>{description}</p>
-                        {link && <a href={link}>More Info</a>}
+
+                        {link && <a className="m-3" href={link}><button className="btn btn-primary">Live Link</button></a>}
+                        {repo && <a href={repo}><button className="btn btn-primary">Repo</button></a>}
+
+
                     </div>
                 </>
             )}

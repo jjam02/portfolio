@@ -1,36 +1,46 @@
-.btn:hover,
-.btn:focus,
-.btn:active {
-  background-color: inherit !important;
-  border-color: inherit !important;
-  color: inherit !important;
-  box-shadow: none !important;
-  outline: none !important;
+/* Specific technology styles */
+.html:disabled {
+  background-color: #e44d26 !important;
+  color: white !important;
+  opacity: 1 !important;
 }
 
-.html {
-  background-color: #e44d26;
-  color: white;
+.css:disabled {
+  background-color: #1572b6 !important;
+  color: white !important;
+  opacity: 1 !important;
 }
 
-.css {
-  background-color: #1572b6;
-  color: white;
+.ts:disabled {
+  background-color: #007acc !important;
+  color: white !important;
+  opacity: 1 !important;
 }
 
-.ts {
-  background-color: #007acc;
-  color: white;
+.react:disabled {
+  background-color: #61dafb !important;
+  color: black !important;
+  border-color: white;
+  opacity: 1 !important;
 }
 
-.react {
-  background-color: #61dafb;
-  color: black;
+.js:disabled {
+  background-color: #f7df1e !important;
+  color: black !important;
+  border-color: white;
+  opacity: 1 !important;
 }
 
-.js {
-  background-color: #f7df1e;
-  color: black;
+.unity:disabled {
+  background-color: black !important;
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.cSharp:disabled {
+  background-color: #68217a !important;
+  color: white !important;
+  opacity: 1 !important;
 }
 
 .footer {
