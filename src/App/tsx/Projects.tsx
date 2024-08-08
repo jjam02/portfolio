@@ -21,21 +21,7 @@ interface Project {
     repo: string;
 }
 
-function generateProjectData(numProj: number): Project[] {
 
-    for (let i = 0; i < numProj; i++) {
-        projects.push({
-            id: projects.length,
-            title: `Project ${projects.length + 1}`,
-            description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Accumsan in praesent phasellus fermentum parturient vehicula duis. Justo fames viverra fringilla consectetur lobortis. Senectus orci vestibulum convallis laoreet ac posuere dapibus interdum purus. Proin netus primis maximus finibus aliquet at augue erat nulla! Morbi pretium aptent massa porta viverra maximus. Blandit praesent nullam vivamus eget augue feugiat. Maximus sapien platea primis euismod eleifend adipiscing rutrum auctor.",
-            imgUrl: "https://placehold.co/300x300",
-            link: "https://youtube.com",
-            tech: ["CSS", "TS", "HTML", "REACT", "JS"],
-            repo: "#"
-        });
-    }
-    return projects;
-}
 
 let projects: Project[] = [{
     id: 0,

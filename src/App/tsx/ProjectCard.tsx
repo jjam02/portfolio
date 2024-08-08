@@ -35,6 +35,7 @@ const TechList: React.FC<TechListProps> = ({ tech }) => {
 }
 
 
+
 const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUrl, link, isEven, tech, repo }) => {
     const alignSide: string = isEven ? "left" : "right";
 
@@ -42,14 +43,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, imgUr
         <div key={id} className="row  m-5 mx-auto">
             {alignSide === "left" ? (
                 <>
-                    <div className="col-12 col-md-6 order-1 order-md-1">
+                    <div className="col-12 col-md-6 order-1 order-md-1 ">
                         <h3>{title}</h3>
                         {imgUrl && <img className="img-fluid" src={imgUrl} alt={title} />}
                     </div>
-                    <div className="col-12 col-md-6 order-2 order-md-2">
+                    <div className="col-12 col-md-6 order-2 order-md-2 d-flex flex-column" >
                         <TechList tech={tech} />
                         <p>{description}</p>
-                        <div>
+                        <div >
                             {link && <a className="m-3" href={link}><button className="btn btn-primary">Live Link</button></a>}
                             {repo && <a href={repo}><button className="btn btn-primary">Repo</button></a>}
                         </div>
