@@ -42,3 +42,47 @@
   visibility: visible;
   opacity: 1;
 }
+
+/* PHONE */
+@media (max-width: 600px) {
+  /* .col svg {
+    width: 50%;
+    height: 50%;
+  } */
+
+  .col svg:hover {
+    transform: scale(0.5);
+  }
+
+  .tech-icon:hover .tech-text {
+    visibility: visible;
+    transform: translateX(-37%);
+    opacity: 1;
+  }
+
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .tech-icon {
+    width: 20vw;
+    cursor: pointer;
+  }
+
+  #soft-skills {
+    display: none;
+  }
+}
+
+/* tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #projectsContainer {
+    gap: 5vh;
+  }
+}
