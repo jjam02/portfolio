@@ -9,9 +9,9 @@ const About = () => {
             <h1 className="m-5  text-center display-3">About Me</h1>
             <div className="container d-flex flex-column justify-content-center align-items-center mt-5">
                 <div className="row mb-3">
-                    {/*Technical Skills */} <div className="col">
+                    {/*Technical Skills */} <div className="col border-end border-5">
                         <h3 className="text-center">Technical Skills</h3>
-                        <div className="icon-grid">
+                        <div className="icon-grid ">
                             <div className="tech-icon">
                                 {/*React*/}{" "}
                                 <svg
@@ -279,23 +279,24 @@ const About = () => {
                         <img
                             src="https://placehold.co/300x300"
                             className="rounded-circle img-fluid self-img"
-                            alt="IMAGE OF ME HERE"
+                            alt="picture of Jonathan Alvarez"
                         />
                         <h2 className="text-center mt-2">Jonathan Alvarez</h2>
                         <h4 >Email: <a href="mailto:Jon.Jalva02@gmail.com">Jon.Jalva02@Gmail.com</a></h4>
                     </div>
-                    <div className="col " id="soft-skills">
-                        <h3 className="text-center">Soft Skills</h3>
-                        <ul className="">
-                            <li>Effective Communicator</li>
-                            <li>Critical Thinking</li>
-                            <li>Attention to detail</li>
-                            <li>Adaptability</li>
+                    <div className="col text-center border-start border-5" id="soft-skills">
+                        <h3 >Soft Skills</h3>
+                        <div className="fs-4 mt-5">
+                            <p>Effective Communicator</p>
+                            <p>Critical Thinking</p>
+                            <p>Attention to detail</p>
+                            <p>Adaptability</p>
+                        </div>
 
-                        </ul>
+
                     </div>
                 </div>
-                <p >
+                <p className="text-center">
                     Los Angeles-based Frontend Developer with 1.5 years of experience in
                     web development, proficient in JavaScript/TypeScript, React, Git,
                     Angular, HTML, and CSS. Specializing in creating functional and
