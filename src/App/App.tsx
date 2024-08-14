@@ -8,6 +8,8 @@ import Home from './tsx/Home';
 import Projects from './tsx/Projects';
 import About from './tsx/About';
 import Footer from './tsx/Footer';
+import ScrollToTop from './tsx/ScrollToTop';
+import Resume from './tsx/Resume'
 
 
 const App = () => {
@@ -15,13 +17,14 @@ const App = () => {
 
   return (
     <Router>
-
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<Resume />} /> */}
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />
 
