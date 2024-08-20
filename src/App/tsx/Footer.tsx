@@ -1,10 +1,11 @@
+import { Color } from "p5"
 import github from "../../assets/git.svg"
 import linkedIn from '../../assets/linkedIn.svg'
 
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer mt-3" style={{ background: "#212529" }}>
             <div className="social-icons d-flex justify-content-center">
                 <a href="https://www.linkedin.com/in/jonathan-alvarez-a99b8a1aa/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedIn} alt="LinkedIn" className="social-icon" />

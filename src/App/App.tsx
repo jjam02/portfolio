@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './css/index.css'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -16,19 +17,22 @@ const App = () => {
 
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<Resume />} /> */}
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-      <Footer />
+    <div className='app-container'>
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<Resume />} /> */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+        <div className="blank-space"></div>
+        <Footer />
 
-    </Router>
+      </Router>
+    </div>
   );
 };
 

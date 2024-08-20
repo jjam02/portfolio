@@ -7,6 +7,7 @@ import "../css/index.css";
 const Resume = () => {
     return (
         <div className="d-flex justify-content-center">
+
             <div className="mt-5">
                 <a href="../../../public/Resume.pdf" download>
                     <button className="btn btn-primary ">PDF</button>
