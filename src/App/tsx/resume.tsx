@@ -6,7 +6,7 @@ import "../css/index.css";
 
 const Resume = () => {
     return (
-        <div className="d-flex justify-content-center">
+        <div id="resume-container" className="d-flex justify-content-center">
 
             <div className="mt-5">
                 <a href="../../../public/Resume.pdf" download>
@@ -18,11 +18,8 @@ const Resume = () => {
                     <span className="c24 c17">&nbsp; &nbsp;Jonathan J. Alvarez</span>
                     <span className="c12 c24">&nbsp;</span>
                 </p>
-                <p className="c15">
-                    <span className="c6 c32">
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp;
-                    </span>
+                <p className=" text-center">
+
                     <span className="c6 c33">(323)-236-5409</span>
                     <span className="c33 c6">
                         <a
@@ -41,10 +38,7 @@ const Resume = () => {
                     </span>
                     <span className="c13 c6">&nbsp;</span>
                 </p>
-                <p className="c15">
-                    <span className="c2">
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    </span>
+                <p className="text-center">
                     <span className="c18 c6">
                         <a
                             className="c23"
@@ -122,7 +116,7 @@ const Resume = () => {
                         University of California, Santa Cruz
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </span>
-                    <span className="c8">
+                    <span id="space" className="c8">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </span>
                     <span className="c12 c8">Sep 2020 - Jun 2024</span>
