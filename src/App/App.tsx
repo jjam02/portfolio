@@ -21,6 +21,7 @@ const App = () => {
       <Router>
         <ScrollToTop />
         <Navbar />
+        <div className='blank-space-top'></div>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<Resume />} /> */}
