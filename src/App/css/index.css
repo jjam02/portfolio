@@ -100,9 +100,31 @@
   height: 10vh;
 }
 
+.btn-container {
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
 @media (prefers-color-scheme: dark) {
   .body {
     background-color: #333;
     color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-icon {
+    width: 30px;
+    height: auto;
+  }
+
+  .btn-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -7,11 +7,11 @@ import '../css/index.css'
 const Home = () => {
     setPageTitle();
     return (
-        <div className=" mt-5 home-container container-fluid">
+        <div className=" mt-5 home-container ">
             <h1 className="display-1">Jonathan Alvarez</h1>
             <h3>Frontend WebDev</h3>
             <h5>Los Angeles, California</h5>
-            <div className="d-flex flex-row gap-5 mt-5 ">
+            <div className=" gap-5 mt-5 btn-container">
                 <a href="mailto:Jon.Jalva02@gmail.com">
                     <button className="btn btn-primary">
                         <svg className="homepage-icon"
@@ -47,7 +47,7 @@ const Home = () => {
                 </Link>
                 <Link to="/projects">
                     <button className="btn btn-primary">
-                        <img className="homepage-icon" src={projectIcon} />
+                        <img className="homepage-icon img-fluid" src={projectIcon} />
                         Projects
                     </button>
                 </Link>
