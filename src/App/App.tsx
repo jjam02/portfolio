@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/index.css'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter  as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './tsx/Navbar'
 import Home from './tsx/Home';
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      <Router basename="/portfolio">
+      <Router>
         <ScrollToTop />
         <Navbar />
         <div className='blank-space-top'></div>
