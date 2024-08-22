@@ -42,6 +42,10 @@ jobs:
               npm install
       - name: Build
         run: npm run build
+      - name: List dist directory contents
+        run: |
+          echo "Listing contents of the dist folder:"
+          ls -R ./dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
