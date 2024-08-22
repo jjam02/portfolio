@@ -48,7 +48,7 @@ const Home = () => {
                 <Link to="/projects">
                     <button className="btn btn-primary">
                         <img className="homepage-icon img-fluid" src={projectIcon} />
-                        Projects
+                        <span>  Projects</span>
                     </button>
                 </Link>
             </div>
