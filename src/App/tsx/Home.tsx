@@ -1,4 +1,4 @@
-import React from "react";
+
 import setPageTitle from "./Helpers";
 import projectIcon from "../../assets/projectIcon.svg"
 import { Link } from "react-router-dom";

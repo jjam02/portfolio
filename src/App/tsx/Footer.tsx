@@ -1,4 +1,4 @@
-import { Color } from "p5"
+
 import github from "../../assets/git.svg"
 import linkedIn from '../../assets/linkedIn.svg'
 
