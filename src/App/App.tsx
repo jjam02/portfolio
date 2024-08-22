@@ -10,7 +10,7 @@ import Projects from './tsx/Projects';
 import About from './tsx/About';
 import Footer from './tsx/Footer';
 import ScrollToTop from './tsx/ScrollToTop';
-import Resume from './tsx/resume';
+import Resume from './tsx/Resume2';
 
 
 const App = () => {
