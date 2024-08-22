@@ -18,12 +18,12 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      <Router>
+      <Router basename="/portfolio">
         <ScrollToTop />
         <Navbar />
         <div className='blank-space-top'></div>
         <Routes>
-          <Route path="/portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
