@@ -77,7 +77,7 @@ let projects: Project[] = [
 //projects.concat(generateProjectData(2));
 
 const Projects = () => {
-    const [data, setData] = useState<Project[]>(projects);
+    const [data] = useState<Project[]>(projects);
     setPageTitle();
     useEffect(() => { }, []);
 
