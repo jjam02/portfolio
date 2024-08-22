@@ -9,7 +9,7 @@ const Resume = () => {
         <div id="resume-container" className="d-flex justify-content-center">
 
             <div className="mt-5">
-                <a href="../../../public/Resume.pdf" download>
+                <a href="/Resume.pdf" download>
                     <button className="btn btn-primary ">PDF</button>
                 </a>
             </div>
