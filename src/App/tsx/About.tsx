@@ -3,6 +3,8 @@ import "../css/About.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+import pfp from "../../assets/profile.jpg";
+
 const About = () => {
     return (
         <div>
@@ -277,7 +279,7 @@ const About = () => {
                     </div>
                     <div className="col text-center">
                         <img
-                            src="https://placehold.co/300x300"
+                            src={pfp}
                             className="rounded-circle img-fluid self-img"
                             alt="picture of Jonathan Alvarez"
                         />

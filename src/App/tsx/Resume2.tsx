@@ -2,6 +2,7 @@ import "../css/Resume.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../css/index.css";
+import pdf from "../../../public/Resume.pdf";
 
 
 const Resume = () => {
@@ -9,7 +10,7 @@ const Resume = () => {
         <div id="resume-container" className="d-flex justify-content-center">
 
             <div className="mt-5">
-                <a href="/Resume.pdf" download>
+                <a href={pdf} download>
                     <button className="btn btn-primary ">PDF</button>
                 </a>
             </div>
